@@ -1,4 +1,7 @@
+package tree;
+
 public class FenwickTree {
+
     static void update(int[] tree, int i, int diff) {
         while(i < tree.length) {
             tree[i] += diff;
@@ -20,7 +23,7 @@ public class FenwickTree {
     }
 
     public static void main(String args[]) {
-        int[] arr = {0,1,2,3,4,5,6,7,8,9}; //원데이터
+        int[] arr = {0,1,2,3,4,5,6,7,8,9}; //original data array
         int[] tree = new int[10]; //fenwick tree
 
         //초기화 : tree는 1부터 index시작
