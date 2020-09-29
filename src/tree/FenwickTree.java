@@ -35,8 +35,9 @@ public class FenwickTree {
         int val = 10;
         arr[5] = val;
         int diff = val - arr[5];
-        update(tree, 5, diff); //5번을 10으로 업데이트
+        update(tree, 5, diff);
 
+        //test
         System.out.println("tree[2]+tree[3] -> " + sum(tree, 2,3));
         System.out.println("tree[2]+tree[3]+tree[4] -> " + sum(tree, 2,4));
         System.out.println("tree[2]+tree[3]+tree[4]+tree[5] -> " + sum(tree, 2,5));
