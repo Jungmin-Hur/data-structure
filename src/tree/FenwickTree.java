@@ -33,8 +33,8 @@ public class FenwickTree {
 
         //5번항목을 10으로 업데이트
         int val = 10;
-        arr[5] = val;
         int diff = val - arr[5];
+        arr[5] = val;
         update(tree, 5, diff);
 
         //test
